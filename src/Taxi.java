@@ -47,8 +47,8 @@ public class Taxi extends Car implements PassengerBording, ChangeSpeed{
         this.perDistanceFee = perDistanceFee;
     }
 
-    public Taxi(long gasAmount) {
-        super(UUID.randomUUID().toString(), gasAmount, 0, Status.NORMAL);
+    public Taxi() {
+        super(UUID.randomUUID().toString(), 100, 0, Status.NORMAL);
         setDefaultFee(3200);
         setDefaultDistance(100);
         setPerDistanceFee(200);

@@ -2,8 +2,8 @@ import java.util.UUID;
 
 public class Bus extends Car implements PassengerBording, ChangeSpeed{
 
-    public Bus(int maxCnt, long price, long gasAmount, long currentSpeed){
-        super(maxCnt, 0, price, UUID.randomUUID().toString(), gasAmount, currentSpeed, Status.DRIVE);
+    public Bus(){
+        super(30, 0, 1250, UUID.randomUUID().toString(), 100, 0, Status.DRIVE);
     }
 
     public void reduceGasAmount(int amount){

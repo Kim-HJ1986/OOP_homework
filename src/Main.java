@@ -2,9 +2,9 @@ import java.util.UUID;
 
 public class Main {
     public static void main(String[] args){
-        Bus bus = new Bus(20, 1250, 30, 0);
-        Taxi taxi = new Taxi(30);
-        Taxi taxi2 = new Taxi(9);
+        Bus bus = new Bus();
+        Taxi taxi = new Taxi();
+        Taxi taxi2 = new Taxi();
 
         //((PassengerBording) bus).passengerBoarding(10);
         bus.passengerBoarding(10);
