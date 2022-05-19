@@ -38,6 +38,10 @@ public abstract class Car {
 
     public void setGasAmount(long gasAmount) {
         this.gasAmount += gasAmount;
+        if ( getGasAmount() <= 10){
+            setStatus(Status.TOGARAGE);
+            System.out.println("주유가 필요합니다.");
+        }
     }
 
     public long getCurrentSpeed() {
@@ -78,23 +82,11 @@ public abstract class Car {
         setStatus(status);
     }
 
-    public Car(String carNum, long gasAmount, long currentSpeed, Status status){
+    public Car(String carNum, long gasAmount, long currentSpeed, Status status, int maxCnt){
         setCarNum(carNum);
         setGasAmount(gasAmount);
         setCurrentSpeed(currentSpeed);
         setStatus(status);
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "maxCnt=" + maxCnt +
-                ", currentCnt=" + currentCnt +
-                ", price=" + price +
-                ", carNum='" + carNum + '\'' +
-                ", gasAmount=" + gasAmount +
-                ", currentSpeed=" + currentSpeed +
-                ", status=" + status +
-                '}';
+        setMaxCnt(maxCnt);
     }
 }
