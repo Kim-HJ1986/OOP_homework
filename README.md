@@ -1,3 +1,5 @@
+추가 요구사항: https://teamsparta.notion.site/Spring-263c5fb16d71471a84b95e20e005e53e
+
 1. **아래의 정보를 가지는 ‘Bus’ 클래스 모델링**
     - 포함해야 할 정보
         1. 최대 승객수
