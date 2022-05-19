@@ -132,7 +132,7 @@ public class Taxi extends Car implements PassengerBording, ChangeSpeed{
         }else{
             setPrice(((getToDestinationDistance() - getDefaultDistance()) * getPerDistanceFee()) + getDefaultFee());
 
-            System.out.println("추가 요금은 " + ((getToDestinationDistance() - getDefaultDistance()) * getPerDistanceFee() - getDefaultFee()) +"원 입니다.");
+            System.out.println("추가 요금은 " + ((getToDestinationDistance() - getDefaultDistance()) * getPerDistanceFee()) +"원 입니다.");
         }
     }
 
